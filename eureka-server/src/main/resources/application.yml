@@ -1,0 +1,4 @@
+eureka:
+  instance:
+    status-page-url-path: /info
+    health-check-url-path: /health

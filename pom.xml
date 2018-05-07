@@ -9,7 +9,14 @@
     <packaging>jar</packaging>
 
     <modules>
-        <module></module>
+        <module>config-server</module>
+        <module>api-gateway</module>
+        <module>eureka-server</module>
+        <module>service-track</module>
+        <module>service-monitor</module>
+        <module>message-queue</module>
+        <module>wuxinvip-user-center</module>
+        <module>wuxinvip-project-center</module>
     </modules>
 
 </project>
