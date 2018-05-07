@@ -1,0 +1,34 @@
+buildscript {
+    ext {
+        springBootVersion = '2.0.1.RELEASE'
+    }
+    repositories {
+        mavenCentral()
+    }
+    dependencies {
+        classpath("org.springframework.boot:spring-boot-gradle-plugin:${springBootVersion}")
+    }
+}
+
+apply plugin: 'java'
+apply plugin: 'idea'
+apply plugin: 'org.springframework.boot'
+apply plugin: 'io.spring.dependency-management'
+
+group = 'com.wuxinvip'
+version = '0.0.1-SNAPSHOT'
+sourceCompatibility = 1.8
+
+
+repositories {
+    mavenCentral()
+    maven { url "https://repo.spring.io/milestone" }
+}
+
+dependencies {
+    compile('com.aliyun.openservices:ons-client:1.7.1.Final')
+    compile('org.springframework:spring-core:4.3.13.RELEASE')
+    compile('org.springframework:spring-context:4.3.13.RELEASE')
+
+    compile('org.springframework.boot:spring-boot-starter')
+}

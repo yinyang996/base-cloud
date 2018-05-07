@@ -15,8 +15,8 @@ import java.util.ArrayList;
 /**
  * Created by 无心 on 2017/11/29.
  */
-@RequestMapping("/")
 @RestController
+@RequestMapping("/")
 public class ItemController {
 
     @Autowired

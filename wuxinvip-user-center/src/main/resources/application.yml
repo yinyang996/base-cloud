@@ -1,6 +1,3 @@
-#spring:
-#  application:
-#    name: user-center
 mybatis:
   mapper-locations: classpath:com/wuxinvip/mapper/*.xml
   typeAliasesPackage: com.wuxinvip.mapper

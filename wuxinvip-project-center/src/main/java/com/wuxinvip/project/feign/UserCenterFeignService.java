@@ -1,7 +1,7 @@
 package com.wuxinvip.project.feign;
 
 import com.wuxinvip.project.feign.impl.UserCenterFeignServiceFallBack;
-import org.springframework.cloud.netflix.feign.FeignClient;
+import org.springframework.cloud.openfeign.FeignClient;
 import org.springframework.web.bind.annotation.RequestMapping;
 
 /**

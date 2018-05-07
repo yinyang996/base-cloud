@@ -1,7 +1,7 @@
 package com.wuxinvip.uc.feign;
 
 import com.wuxinvip.uc.feign.impl.ItemFeignServiceFallBack;
-import org.springframework.cloud.netflix.feign.FeignClient;
+import org.springframework.cloud.openfeign.FeignClient;
 import org.springframework.web.bind.annotation.RequestMapping;
 
 /**
@@ -12,7 +12,6 @@ import org.springframework.web.bind.annotation.RequestMapping;
 public interface ItemFeignService {
     //调用 service 端 controller
     @RequestMapping("/project/list")
-
     String listItem();
 
     /**
@@ -23,7 +22,7 @@ public interface ItemFeignService {
 
      * @RequestLine("PUT /uc/login1")
      * @Headers("Content-type: application/json")
-     * String example1(@RequestBody User user);
+     * String example1(@RequestBody User uc);
      *
      */
 

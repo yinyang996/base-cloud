@@ -66,18 +66,18 @@
     </appender>-->
     ​
     <!--发送到logstash-->
-    <appender name="LOGSTASH" class="net.logstash.logback.appender.LogstashTcpSocketAppender">
-        <!--
+    <!--<appender name="LOGSTASH" class="net.logstash.logback.appender.LogstashTcpSocketAppender">
+        &lt;!&ndash;
         destination 是 logstash 服务的 host:port，
         相当于和 logstash 建立了管道，将日志数据定向传输到 logstash
-        -->
+        &ndash;&gt;
         <destination>127.0.0.1:9250</destination>
         <encoder charset="UTF-8" class="net.logstash.logback.encoder.LogstashEncoder"/>
-    </appender>
+    </appender>-->
     <root level="INFO">
         <appender-ref ref="console"/>
         <!--<appender-ref ref="logstash"/>-->
         <!--<appender-ref ref="flatfile"/>-->
-        <appender-ref ref="LOGSTASH"/>
+        <!--<appender-ref ref="LOGSTASH"/>-->
     </root>
 </configuration>

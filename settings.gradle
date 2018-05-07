@@ -1,0 +1,25 @@
+rootProject.name = 'base-cloud'
+
+//服务网关
+include('api-gateway')
+
+//服务注册中心
+include('eureka-server')
+
+//服务配置中心
+include('config-server')
+
+//消息中心
+include('message-queue')
+
+//服务监控中心
+include('service-monitor')
+
+//服务跟踪中心
+include('service-track')
+
+//SOA项目中心
+include('wuxinvip-project-center')
+
+//SOA用户中心
+include('wuxinvip-user-center')
