@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.wuxinvip.uc.mapper.LoginDao">
+
+    <resultMap id="User" type="com.wuxinvip.uc.model.User">
+        <id column="user_id" property="userId" jdbcType="INTEGER" javaType="int"/>
+        <result column="nickname" property="nickname" jdbcType="VARCHAR" javaType="string"/>
+        <result column="realname" property="realname" jdbcType="VARCHAR" javaType="string"/>
+        <result column="phone" property="phone" jdbcType="VARCHAR" javaType="string"/>
+        <result column="idcard" property="idCard" jdbcType="VARCHAR" javaType="string"/>
+        <result column="password" property="password" jdbcType="VARCHAR" javaType="string"/>
+        <result column="bank_idcard" property="bankIdCard" jdbcType="VARCHAR" javaType="string"/>
+        <result column="bank_phone" property="bankPhone" jdbcType="VARCHAR" javaType="string"/>
+        <result column="avatar" property="avatar" jdbcType="VARCHAR" javaType="string"/>
+        <result column="sex" property="sex" jdbcType="TINYINT" javaType="Boolean"/>
+        <result column="birthday" property="birthday" jdbcType="DATE" javaType="Date"/>
+        <result column="email" property="email" jdbcType="VARCHAR" javaType="string"/>
+        <result column="qq" property="qq" jdbcType="VARCHAR" javaType="string"/>
+        <result column="wx" property="wx" jdbcType="VARCHAR" javaType="string"/>
+        <result column="sina" property="sina" jdbcType="VARCHAR" javaType="string"/>
+        <result column="area_id" property="areaId" jdbcType="INTEGER" javaType="int"/>
+        <result column="register_from" property="registerFrom" jdbcType="TINYINT" javaType="int"/>
+        <result column="register_time" property="registerTime" jdbcType="DATE" javaType="Date"/>
+        <result column="login_time" property="loginTime" jdbcType="DATE" javaType="Date"/>
+        <result column="last_login_time" property="lastLoginTime" jdbcType="DATE" javaType="Date"/>
+        <result column="login_ip" property="loginIp" jdbcType="VARCHAR" javaType="string"/>
+        <result column="last_login_ip" property="lastLoginIp" jdbcType="VARCHAR" javaType="string"/>
+        <result column="login_from" property="loginFrom" jdbcType="TINYINT" javaType="int"/>
+        <result column="login_num" property="loginNum" jdbcType="INTEGER" javaType="int"/>
+        <result column="wx_openid" property="wxOpenid" jdbcType="VARCHAR" javaType="string"/>
+        <result column="wx_info" property="wxInfo" jdbcType="VARCHAR" javaType="string"/>
+        <result column="qq_openid" property="gqOpenid" jdbcType="VARCHAR" javaType="string"/>
+        <result column="qq_info" property="qqInfo" jdbcType="VARCHAR" javaType="string"/>
+        <result column="sina_openid" property="sinaOpenid" jdbcType="VARCHAR" javaType="string"/>
+        <result column="sina_info" property="sinaInfo" jdbcType="VARCHAR" javaType="string"/>
+        <result column="is_auth" property="isAuth" jdbcType="TINYINT" javaType="int"/>
+        <result column="is_buy" property="isBuy" jdbcType="TINYINT" javaType="int"/>
+        <result column="is_allow_inform" property="isAllowInform" jdbcType="TINYINT" javaType="int"/>
+        <result column="is_allow_talk" property="isAllowTalk" jdbcType="TINYINT" javaType="int"/>
+        <result column="state" property="state" jdbcType="TINYINT" javaType="int"/>
+        <result column="level" property="level" jdbcType="TINYINT" javaType="int"/>
+        <result column="company" property="company" jdbcType="VARCHAR" javaType="string"/>
+        <result column="position" property="position" jdbcType="VARCHAR" javaType="string"/>
+        <result column="introduction" property="introduction" jdbcType="VARCHAR" javaType="string"/>
+    </resultMap>
+
+    <sql id='table_name'>user</sql>
+    <sql id="select_columns">
+        user_id as userId, nickname, realname, phone, idcard as idCard, password,bank_code AS bankCode, bank_idcard as bankIdCard,bank_phone as bankPhone, avatar, sex,
+        birthday,email,qq,wx,sina,area_id as areaId,register_from as registerFrom,register_time as registerTime,login_time as loginTime,last_login_time as lastLoginTime,
+        login_ip as loginIp,last_login_ip as lastLoginIp,login_from as loginFrom,login_num as loginNum,wx_openid as wxOpenid,wx_info as wxInfo,qq_openid as qqOpenid,qq_info as qqInfo,sina_openid as sinaOpenid,sina_info as sinaInfo,
+        is_auth as isAuth,is_buy as isBuy,is_allow_inform as isAllowInform,is_allow_talk as isAllowTalk,state,invest_conditions AS investConditions,level,company,`position`,introduction
+    </sql>
+
+
+    <select id="listUser" resultType="com.wuxinvip.uc.model.User">
+        SELECT <include refid="select_columns"/>
+        FROM <include refid="table_name"/>
+        WHERE state = 1
+    </select>
+
+</mapper>

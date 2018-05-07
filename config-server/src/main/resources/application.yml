@@ -6,6 +6,11 @@ spring:
           uri: https://github.com/huoyan403/cloud-config.git
           username:
           password:
-          search-paths: config-project
-          search-paths: config-uc
+          search-paths: wuxinvip-message
+          search-paths: wuxinvip-uc-api
+          search-paths: wuxinvip-uc-service
+          search-paths: wuxinvip-uc-repository
+          search-paths: wuxinvip-project-api
+          search-paths: wuxinvip-project-service
+          search-paths: wuxinvip-project-repository
           force-pull: true

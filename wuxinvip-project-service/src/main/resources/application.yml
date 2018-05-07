@@ -1,0 +1,5 @@
+mybatis:
+  mapper-locations: classpath:com/wuxinvip/mapper/*.xml
+  typeAliasesPackage: com.wuxinvip.mapper
+
+

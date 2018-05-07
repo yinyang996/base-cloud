@@ -1,35 +1,81 @@
+# base-cloud
 
-gradle环境
+#### 项目介绍
+使用spring cloud 搭建微服务应用架构
+
+```
+    基于spring理论搭建构建真正的微服务架构
+    
+```
+
+#### 软件架构
+软件架构说明
+![cloud架构图](http://upload-images.jianshu.io/upload_images/6434888-aa10c11f1f366701.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240 "cloud架构图-截止到编辑日志")
+
+![输入图片说明](https://gitee.com/uploads/images/2018/0505/223404_c82944cc_904557.jpeg "diagram-distributed-systems.jpg")
+#### 功能介绍
+```
+服务网关
+api-gateway  
+
+配置中心
+config-server
+
+
+注册中心
+eureka-server
+
+消息中心 Rocket MQ
+message-queue
+
+服务监控中心
+service-monitor
+
+服务跟踪中心
+service-track
+
+项目依赖公共包
+wuxinvip-common
+
+项目核心包
+wuxinvip-core-starter
+
+SOA 项目服务拆分
+wuxinvip-project-api
+wuxinvip-project-service
+wuxinvip-project-repository
+
+SOA用户服务拆分
+wuxinvip-uc-api
+wuxinvip-uc-service
+wuxinvip-uc-repository
+
+
+
+
+
+
 
 
 ```
-已完成功能列表
 
-1、集成mybatis 打通数据流流转
-2、服务监控模块 、turbine、hystrix-dashboard
-3、服务日志收集系统、ELK服务模块部署【简书:https://www.jianshu.com/p/542e1d1fb49d】
-4、网关过滤模块
-5、服务跟踪模块
-6、服务服务注册模块 eureka
-7、服务调用feign、服务熔断hystrixCommand
-8、url远程配置刷新
-9、集成消息队列
-10、message-queue改为 java config方式
+#### 安装教程
+
+1. xxxx
+2. xxxx
+3. xxxx
+
+#### 使用说明
+
+1. xxxx
+2. xxxx
+3. xxxx
 
 
 
-未完成功能列表
-1、
-2、集成redis
-3、集中权限管理【单点登陆】
-4、集成email sms中心
-5、监控模块添加预警功能【调用 email sms服务】
-6、抽离mybatis框架 作为starter 引入【jpa、mybatis解耦和】
-7、..
-```
-
+#### 端口约定
 ```$xslt
-端口约定
+
 dev
 
 eureka-server 39.107.82.228:80【暂定】
@@ -48,8 +94,8 @@ service-monitor
 8040-8050
 
 user-center
-8050-8060
+8050-8080
 
 project-center
-8060-8070
+8080-8110
 ```

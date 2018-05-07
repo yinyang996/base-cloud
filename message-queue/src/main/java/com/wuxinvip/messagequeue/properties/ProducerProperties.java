@@ -32,6 +32,7 @@ public class ProducerProperties extends ProducerBean {
 
     @Override
     public void setProperties(Properties properties) {
+
         properties.setProperty(Constant.ConsumerId,consumerId);
         properties.setProperty(Constant.AccessKey,accessKey);
         properties.setProperty(Constant.SecretKey,secretKey);

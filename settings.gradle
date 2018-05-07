@@ -9,7 +9,7 @@ include('eureka-server')
 //服务配置中心
 include('config-server')
 
-//消息中心
+//MQ消息中心
 include('message-queue')
 
 //服务监控中心
@@ -18,8 +18,24 @@ include('service-monitor')
 //服务跟踪中心
 include('service-track')
 
+
+//公共包
+include("wuxinvip-common")
+
+//消息 email sms
+include("wuxinvip-message")
+
+//核心引用包
+include("wuxinvip-core-starter")
+
 //SOA项目中心
-include('wuxinvip-project-center')
+include('wuxinvip-project-api')
+include('wuxinvip-project-entity')
+include('wuxinvip-project-service')
+include('wuxinvip-project-repository')
 
 //SOA用户中心
-include('wuxinvip-user-center')
+include('wuxinvip-uc-api')
+include('wuxinvip-uc-entity')
+include('wuxinvip-uc-service')
+include('wuxinvip-uc-repository')
