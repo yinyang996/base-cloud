@@ -3,7 +3,7 @@ spring:
     config:
       server:
         git:
-          uri: https://github.com/huoyan403/cloud-config.git
+          uri: https://github.com/wuxinvip/base-cloud-config.git
           username:
           password:
           search-paths: wuxinvip-message

@@ -27,6 +27,7 @@ include("wuxinvip-message")
 
 //核心引用包
 include("wuxinvip-core-starter")
+include("wuxinvip-core-repository-starter")
 
 //SOA项目中心
 include('wuxinvip-project-api')
