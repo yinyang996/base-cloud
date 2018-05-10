@@ -18,8 +18,8 @@ public class UserRepository {
 
     @RequestMapping("list")
     @Hystrix
-    private List<User> listItem(){
-        return userDao.listUser();
+    private List<User> listUser(User user){
+        return userDao.list(user);
     }
 
 }

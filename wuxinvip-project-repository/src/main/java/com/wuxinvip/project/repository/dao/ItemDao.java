@@ -1,11 +1,10 @@
 package com.wuxinvip.project.repository.dao;
 
 
+import com.wuxinvip.core.repository.service.BaseRepository;
 import com.wuxinvip.project.model.Item;
 
-import java.util.ArrayList;
+public interface ItemDao extends BaseRepository<Item> {
 
-public interface ItemDao {
 
-    ArrayList<Item> listItem();
 }
