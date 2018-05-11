@@ -67,31 +67,36 @@ project-center SOA项目中心
 10、message-queue改为 java config方式 
 11、集成redis 使用spring-data-redis
 12、统一引入外部配置
+13、抽离mybatis框架 作为starter 引入【jpa、mybatis解耦和】 待解决bug
 
 
 未完成功能列表
 
 1、
 2、
-3、集中权限管理【单点登陆】
+3、集中权限管理【OAuth】
 4、集成email sms中心
 5、监控模块添加预警功能【调用 email sms服务】
-6、抽离mybatis框架 作为starter 引入【jpa、mybatis解耦和】
+6、
 7、docker一键执行部署脚本
 8、..
+
 ```
 
 
 
 #### 安装教程
 
-1. xxxx
-2. xxxx
-3. xxxx
+1. copy base-cloud-config 至你的项目
+2. 修改配置文件中的远程仓库配置
+3. 启动eureka、config服务
+4. 启动service-monitor、service-track等服务监控
+5. 启动服务实例
 
 #### 使用说明
 
-1. xxxx
-2. xxxx
-3. xxxx
+
+1. 服务端口按照各个分支控制
+2. 远程配置中心 http://config.wuxinvip.com/
+3. 远程注册中心 http://eureka.wuxinvip.com/
 
