@@ -15,6 +15,10 @@
         <module>service-track</module>
         <module>service-monitor</module>
         <module>message-queue</module>
+
+        <module>wuxinvip-common</module>
+        <module>wuxinvip-core-starter</module>
+
         <module>wuxinvip-user-center</module>
         <module>wuxinvip-project-center</module>
     </modules>
