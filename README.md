@@ -12,7 +12,11 @@
 软件架构说明
 ![cloud架构图](http://upload-images.jianshu.io/upload_images/6434888-aa10c11f1f366701.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240 "cloud架构图-截止到编辑日志")
 
-![输入图片说明](https://gitee.com/uploads/images/2018/0505/223404_c82944cc_904557.jpeg "diagram-distributed-systems.jpg")
+![官方的设计图纸](https://upload-images.jianshu.io/upload_images/6434888-33821ee404f1f004.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+
+
+
+![本分支设计图纸](https://upload-images.jianshu.io/upload_images/6434888-58f53a739b08b583.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 #### 功能介绍
 ```
 服务网关
