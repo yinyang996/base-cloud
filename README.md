@@ -2,25 +2,15 @@
 
 #### 项目介绍
 使用spring cloud 搭建微服务应用架构
-服务暂时以SOA方式拆分　【考虑现在主流还是SOA服务拆分】
 
-
-api-gateway  服务网关 
-config-server 服务配置中心
-eureka-server 服务注册中心
-message-queue rocketmq
-service-monitor 服务监控中心
-service-track 服务跟踪中心
-user-center SOA用户中心
-project-center SOA项目中心
-
+满足中小团队 项目初始化过程 更快捷的应用spring cloud服务体系
 
 
 #### 代码分支 
 
 
 ##### master
-    项目架构图
+    项目设计图纸
 
 ##### 1.5.X-boot【maven】
     spring-boot-starter 1.5版本
@@ -43,9 +33,9 @@ project-center SOA项目中心
 #### 软件架构
 软件架构说明
 
-###### cloud架构图-截止到编辑日志
+###### cloud设计图纸-截止到编辑日志
 
-![cloud架构图](http://upload-images.jianshu.io/upload_images/6434888-aa10c11f1f366701.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240 "cloud架构图-截止到编辑日志")
+![cloud设计图纸](http://upload-images.jianshu.io/upload_images/6434888-aa10c11f1f366701.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240 "cloud架构图-截止到编辑日志")
 
 ###### 官方的设计图纸
 
