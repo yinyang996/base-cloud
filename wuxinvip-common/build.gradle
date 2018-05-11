@@ -30,8 +30,7 @@ ext {
 }
 
 dependencies {
-    compile project (":wuxinvip-common")
-    compile project (":wuxinvip-core-starter")
+
 
     testCompile('org.springframework.boot:spring-boot-starter-test')
 }

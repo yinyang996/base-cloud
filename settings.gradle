@@ -19,6 +19,8 @@ include('service-monitor')
 include('service-track')
 
 //SOA项目中心
+include('wuxinvip-common')
+include('wuxinvip-core-starter')
 include('wuxinvip-project-center')
 
 //SOA用户中心
