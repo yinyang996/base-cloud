@@ -11,9 +11,9 @@
 #### 软件架构
 软件架构说明
 
-###### cloud架构图-截止到编辑日志
+###### cloud设计图纸-截止到编辑日志
 
-![cloud架构图](http://upload-images.jianshu.io/upload_images/6434888-aa10c11f1f366701.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240 "cloud架构图-截止到编辑日志")
+![cloud设计图纸](http://upload-images.jianshu.io/upload_images/6434888-aa10c11f1f366701.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240 "cloud架构图-截止到编辑日志")
 
 ###### 官方的设计图纸
 
