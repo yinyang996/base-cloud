@@ -88,5 +88,5 @@
 
 1. 服务端口按照各个分支控制
 2. 远程配置中心 http://config.wuxinvip.com/
-3. 远程注册中心 http://eureka.wuxinvip.com/
+3. 远程注册中心 http://eureka.wuxinvip.com/ 或者 http://eureka.springcloud.cn/
 
