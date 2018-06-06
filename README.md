@@ -90,3 +90,6 @@
 2. 远程配置中心 http://config.wuxinvip.com/
 3. 远程注册中心 http://eureka.wuxinvip.com/ 或者 http://eureka.springcloud.cn/
 
+
+config.wuxinvip.com eureka.wuxinvip.com已停用 配置中心建议自己运行在内网
+
