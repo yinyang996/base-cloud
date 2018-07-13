@@ -62,7 +62,7 @@
 
 未完成功能列表
 
-1、
+1、url统计次数【可在api-gateway上添加url统计次数、还可以输出url-time、开关控制】
 2、
 3、集中权限管理【OAuth】
 4、集成email sms中心
