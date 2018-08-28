@@ -36,7 +36,7 @@
 ###### cloud设计图纸-截止到编辑日志
 
 ![cloud设计图纸]( cloud-uml/base-cloud.jpg "cloud架构图-截止到编辑日志")
-![cloud设计图纸]( cloud-uml/动态刷新配置流程图.jpg "动态刷新配置流程图")
+![cloud设计图纸]( cloud-uml/动态刷新配置流程图.jpg "动态刷新配置流程图--截止到编辑日志")
 ![cloud设计图纸]( cloud-uml/服务治理框架图.jpg "服务治理框架图-截止到编辑日志")
 ![cloud设计图纸]( cloud-uml/服务注册到调用时序图.jpg "服务注册到调用时序图-截止到编辑日志")
 
