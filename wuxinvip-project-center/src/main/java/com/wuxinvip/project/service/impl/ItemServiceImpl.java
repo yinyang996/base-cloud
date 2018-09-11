@@ -7,10 +7,10 @@ import com.wuxinvip.project.service.ItemService;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.redis.core.RedisTemplate;
 import org.springframework.stereotype.Service;
 
-import java.util.ArrayList;
-import java.util.Random;
+import java.util.*;
 import java.util.concurrent.TimeUnit;
 
 /**
@@ -23,6 +23,9 @@ public class ItemServiceImpl implements ItemService {
 
     @Autowired
     ItemDao itemDao;
+
+    @Autowired
+    RedisTemplate redisTemplate;
 
 
     @Override
@@ -40,6 +43,11 @@ public class ItemServiceImpl implements ItemService {
     }
 
     public ArrayList<Item> listItemFallBack() {
+
+//        redisTemplate.opsForSet().add("",new HashSet<>());
+//        redisTemplate.opsForHash().putAll("",new HashMap());
+//        redisTemplate.executePipelined("dfds").addAll(new ArrayList());
+
         return new ArrayList<>();
     }
 
