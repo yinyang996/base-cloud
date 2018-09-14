@@ -18,6 +18,8 @@ include('service-monitor')
 //服务跟踪中心
 include('service-track')
 
+//任务调度
+include('service-task')
 
 //公共包
 include("wuxinvip-common")
