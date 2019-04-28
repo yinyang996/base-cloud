@@ -2,13 +2,12 @@ package com.wuxinvip.core.repository.service;
 
 
 import com.wuxinvip.core.repository.common.Page;
-import org.springframework.stereotype.Repository;
+import org.springframework.data.repository.Repository;
 
 import java.util.List;
 
 
-@Repository
-public interface BaseRepository<T> {
+public interface BaseRepository<T> extends Repository<T,String> {
 
 
 

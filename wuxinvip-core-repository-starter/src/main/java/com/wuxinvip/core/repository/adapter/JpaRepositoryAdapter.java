@@ -4,11 +4,14 @@ import com.wuxinvip.core.repository.common.Page;
 import org.springframework.data.jpa.repository.Modifying;
 import org.springframework.data.jpa.repository.Query;
 import org.springframework.data.jpa.repository.config.EnableJpaRepositories;
+import org.springframework.data.repository.Repository;
+import org.springframework.stereotype.Component;
 
 import java.util.List;
 
 @EnableJpaRepositories
-public interface JpaRepositoryAdapter<T>{
+@Component
+public interface JpaRepositoryAdapter<T>extends Repository<T,String> {
 
 
     @Modifying

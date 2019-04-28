@@ -2,13 +2,13 @@ package com.wuxinvip.core.repository.adapter;
 
 import com.wuxinvip.core.repository.common.Page;
 import org.apache.ibatis.annotations.*;
-import org.springframework.stereotype.Repository;
+import org.springframework.data.jpa.repository.config.EnableJpaRepositories;
+import org.springframework.data.repository.Repository;
 
 import java.util.List;
 
 @Mapper
-@Repository
-public interface MybatisRepositoryAdapter<T> {
+public interface MybatisRepositoryAdapter<T> extends Repository<T,String> {
 
     @Insert("")
     T save(T t);
