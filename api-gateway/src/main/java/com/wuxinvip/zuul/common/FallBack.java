@@ -1,4 +1,4 @@
-package com.wuxinvip.apigateway.common;
+package com.wuxinvip.zuul.common;
 
 import org.springframework.http.HttpHeaders;
 import org.springframework.http.HttpStatus;
@@ -14,7 +14,7 @@ import java.io.InputStream;
  * @description:
  * @author: wuxin
  * @date:2019/4/17 13:31
- * @location com.wuxinvip.apigateway.common.FallBack.class
+ * @location com.wuxinvip.zuul.common.FallBack.class
  */
 public class FallBack {
 

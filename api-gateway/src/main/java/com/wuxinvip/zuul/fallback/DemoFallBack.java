@@ -1,4 +1,4 @@
-package com.wuxinvip.apigateway.fallback;
+package com.wuxinvip.zuul.fallback;
 
 import com.wuxinvip.apigateway.common.FallBack;
 import org.slf4j.Logger;
@@ -11,7 +11,7 @@ import org.springframework.http.client.ClientHttpResponse;
  * @description:
  * @author: wuxin
  * @date:2019/4/17 13:27
- * @location com.wuxinvip.apigateway.fallback.DemoFallBack.class
+ * @location com.wuxinvip.zuul.fallback.DemoFallBack.class
  */
 public class DemoFallBack extends FallBack implements FallbackProvider {
 
