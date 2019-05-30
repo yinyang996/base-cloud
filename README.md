@@ -102,10 +102,11 @@
 
 config.wuxinvip.com eureka.wuxinvip.com已停用 配置中心建议自己运行在内网
 
+### [文档中心-持续更新中](https://gitee.com/none_heart/cloud-doc)
 
 ### 不再维护、感兴趣的自己扩展服务吧
 
 [github上spring cloud服务源码](https://github.com/spring-cloud)
 
-### [文档中心](https://gitee.com/none_heart/cloud-doc)
+
 
