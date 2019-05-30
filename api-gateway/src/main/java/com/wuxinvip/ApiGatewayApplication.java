@@ -1,4 +1,4 @@
-package com.wuxinvip.apigateway;
+package com.wuxinvip;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

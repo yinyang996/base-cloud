@@ -1,0 +1,54 @@
+spring:
+  cloud:
+    gateway:
+      routes:
+      - id: after_route
+        uri: http://example.org
+        #期望代理 该时间以后所有服务
+        predicates:
+        - After=2017-01-20T17:42:47.789-07:00[America/Denver]
+        - Before=2017-01-20T17:42:47.789-07:00[America/Denver]
+        - Between=2017-01-20T17:42:47.789-07:00[America/Denver], 2017-01-21T17:42:47.789-07:00[America/Denver]
+        - Cookie=chocolate, ch.p
+        - Header=X-Request-Id, \d+
+        - Host=**.somehost.org,**.anotherhost.org
+        - Method=GET
+        - Path=/foo/{segment},/bar/{segment}
+        - Query=foo, ba.
+        - RemoteAddr=192.168.1.1/24
+        filters：
+        -  AddRequestHeader = X-Request-Foo,Bar
+        - PrefixPath=/mypath
+        - PreserveHostHeader
+        #redis 令牌桶限流
+        - name: RequestRateLimiter
+          args:
+            # 数值可以配置到配置中心获取 实时控制令牌数量
+            redis-rate-limiter.replenishRate: 10
+            redis-rate-limiter.burstCapacity: 20
+        #网关重试
+        - name: Retry
+          args:
+            retries: 3
+            statuses: BAD_GATEWAY
+        #请求大小限制
+        - name: RequestSize
+          args:
+            maxSize: 5000000
+        # 重定向
+        -  RedirectTo = 302 ， http ：//acme.org
+        #保存session
+        - SaveSession
+      httpclient:
+        ssl:
+          useInsecureTrustManager: true
+          trustedX509Certificates:
+          - cert1.pem
+          - cert2.pem
+server:
+  ssl:
+    enabled: true
+    key-alias: scg
+    key-store-password: scg1234
+    key-store: classpath:scg-keystore.p12
+    key-store-type: PKCS12

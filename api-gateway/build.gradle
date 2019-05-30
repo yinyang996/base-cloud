@@ -32,6 +32,8 @@ ext {
 dependencies {
 	compile('org.springframework.cloud:spring-cloud-starter-netflix-eureka-client')
 	compile('org.springframework.cloud:spring-cloud-starter-netflix-zuul')
+	compile group: 'org.springframework.cloud', name: 'spring-cloud-starter-gateway'
+
 
 	// https://mvnrepository.com/artifact/org.springframework.retry/spring-retry
 	compile group: 'org.springframework.retry', name: 'spring-retry', version: '1.2.4.RELEASE'
