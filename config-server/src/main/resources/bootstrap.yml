@@ -1,0 +1,7 @@
+spring:
+  cloud:
+    config:
+      server:
+        health:
+          repositories:
+      token:

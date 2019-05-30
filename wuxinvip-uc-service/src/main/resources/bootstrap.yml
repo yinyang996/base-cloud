@@ -20,7 +20,7 @@ spring:
         service-id: CONFIG-SERVER
       #通过地址获取配置
       uri: http://localhost:8888/
-
+      token:
 server:
   port: 2222
 eureka:
